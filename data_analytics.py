@@ -48,7 +48,7 @@ def send_mail(country, total_cases, new_cases, total_deaths, new_deaths, total_r
     server.starttls()
     server.ehlo()
 
-    server.login('muaythay1@yandex.ru', 'Bavaria1996')
+    server.login('xxx', 'xxx')
 
     subject = (f'COVID-19 stats in {country}')
 
@@ -65,7 +65,7 @@ def send_mail(country, total_cases, new_cases, total_deaths, new_deaths, total_r
 
     msg = f"Subject: {subject}\n\n{body}"
 
-    server.sendmail("muaythay1@yandex.ru", "garikvologodskiy@gmail.com", msg)
+    server.sendmail("xxx", "xxx", msg)
     print("Message sent")
 
     server.quit()
